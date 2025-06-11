@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import './Tickets.css'
 import { FaPrint, FaEye, FaSearch } from 'react-icons/fa'
 
-const API_URL = 'https://backend-cisneros.onrender.com';
+const API_URL = 'https://backend-cisneros.onrender.com/api';
+const BASE_URL = 'https://backend-cisneros.onrender.com';
 
 function Tickets() {
   const [tickets, setTickets] = useState([])
@@ -45,7 +46,7 @@ function Tickets() {
 
   const handlePrintTicket = async (numeroTicket) => {
     try {
-      window.open(`${API_URL}/tickets/${numeroTicket}/pdf`, '_blank');
+      window.open(`${BASE_URL}/api/tickets/${numeroTicket}/pdf`, '_blank');
     } catch (error) {
       setError(error.message)
     }

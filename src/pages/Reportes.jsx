@@ -11,7 +11,7 @@ function Reportes() {
         endDate: '',
         reportType: 'daily'
     });
-    const API_URL = 'https://backend-cisneros.onrender.com';
+    const API_URL = 'https://backend-cisneros.onrender.com/api';
 
     useEffect(() => {
         // Establecer fechas por defecto (último mes)
@@ -35,7 +35,7 @@ function Reportes() {
             setLoading(true);
             const { startDate, endDate, reportType } = filters;
             const response = await fetch(
-                `${API_URL}/api/sales?startDate=${startDate}&endDate=${endDate}&type=${reportType}`
+                `${API_URL}/sales?startDate=${startDate}&endDate=${endDate}&type=${reportType}`
             );
             if (!response.ok) {
                 throw new Error('Error al cargar los reportes');

@@ -1,9 +1,9 @@
-const API_URL = 'https://backend-cisneros.onrender.com';
+const API_URL = 'https://backend-cisneros.onrender.com/api';
 
 export const userService = {
     async getUsers() {
         const token = localStorage.getItem('token');
-        const response = await fetch(`${API_URL}/api/users`, {
+        const response = await fetch(`${API_URL}/users`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -21,7 +21,7 @@ export const userService = {
     },
     async deleteUser(id) {
         const token = localStorage.getItem('token');
-        const response = await fetch(`${API_URL}/api/users/${id}`, {
+        const response = await fetch(`${API_URL}/users/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ export const userService = {
     },
     async updateUser(id, userData) {
         const token = localStorage.getItem('token');
-        const response = await fetch(`${API_URL}/api/users/${id}`, {
+        const response = await fetch(`${API_URL}/users/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ export const userService = {
     },
     async createUser(userData) {
         const token = localStorage.getItem('token');
-        const response = await fetch(`${API_URL}/api/users`, {
+        const response = await fetch(`${API_URL}/users`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

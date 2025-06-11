@@ -1,8 +1,8 @@
-const API_URL = 'https://backend-cisneros.onrender.com';
+const API_URL = 'https://backend-cisneros.onrender.com/api';
 
 export const authService = {
     async login(username, password) {
-        const response = await fetch(`${API_URL}/api/login`, {
+        const response = await fetch(`${API_URL}/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ export const authService = {
     },
 
     async register(username, password, nombre, apellido, email) {
-        const response = await fetch(`${API_URL}/api/register`, {
+        const response = await fetch(`${API_URL}/register`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

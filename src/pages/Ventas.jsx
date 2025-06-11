@@ -12,7 +12,8 @@ const Ventas = () => {
     const [showSuccessModal, setShowSuccessModal] = useState(false);
     const [lastSaleDetails, setLastSaleDetails] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
-    const API_URL = 'https://backend-cisneros.onrender.com';
+    const API_URL = 'https://backend-cisneros.onrender.com/api';
+    const BASE_URL = 'https://backend-cisneros.onrender.com';
     
 
     useEffect(() => {
@@ -169,7 +170,7 @@ const Ventas = () => {
     };
 
     const handlePrintTicket = (sale) => {
-        const ticketUrl = sale.pdfUrl ? `${API_URL}${sale.pdfUrl}` : `${API_URL}/tickets/${sale._id}/pdf`;
+        const ticketUrl = sale.pdfUrl ? `${BASE_URL}${sale.pdfUrl}` : `${API_URL}/tickets/${sale._id}/pdf`;
         console.log('Intentando abrir URL del ticket:', ticketUrl);
         window.open(ticketUrl, '_blank');
     };

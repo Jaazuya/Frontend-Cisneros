@@ -7,7 +7,7 @@ function ProductModal({ onClose }) {
   const [editId, setEditId] = useState(null)
   const [error, setError] = useState('')
   const [searchTerm, setSearchTerm] = useState('');
-  const API_URL = 'https://backend-cisneros.onrender.com';
+  const API_URL = 'https://backend-cisneros.onrender.com/api';
 
   useEffect(() => {
     fetchProducts()
