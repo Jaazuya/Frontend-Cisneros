@@ -20,8 +20,8 @@ function Navbar() {
       </div>
       
       <div className="navbar-links">
-        <Link to="/productos">Productos</Link>
-        <Link to="/ventas">Ventas</Link>
+        {/* <Link to="/productos">Productos</Link>
+        <Link to="/ventas">Ventas</Link> */}
         {user ? (
           // Usuario autenticado
           <div className="user-menu">
