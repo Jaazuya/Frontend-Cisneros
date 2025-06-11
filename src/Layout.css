@@ -1,0 +1,5 @@
+.main-content {
+  padding-top: 60px; /* Altura del navbar */
+  min-height: calc(100vh - 60px);
+  background-color: #f8f9fa;
+} 
