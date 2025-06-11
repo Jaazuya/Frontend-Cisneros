@@ -18,11 +18,11 @@ function Home() {
   }
 
   const handleTicketsClick = () => {
-    window.open('/tickets', '_blank')
+    window.location.href = '/tickets';
   }
 
   const handleReportsClick = () => {
-    window.open('/reportes', '_blank')
+    window.location.href = '/reportes';
   }
 
   return (
