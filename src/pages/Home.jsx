@@ -1,6 +1,6 @@
 import './Home.css'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import ProductModal from '../components/ProductModal'
 import InventoryModal from '../components/InventoryModal'
 import SaleModal from '../components/SaleModal'
@@ -12,17 +12,18 @@ function Home() {
   const [showInventoryModal, setShowInventoryModal] = useState(false)
   const [showSaleModal, setShowSaleModal] = useState(false)
   const { user } = useAuth()
+  const navigate = useNavigate()
 
   const handleSalesClick = () => {
-    window.open('/ventas', '_blank');
+    navigate('/ventas');
   }
 
   const handleTicketsClick = () => {
-    window.open('/tickets', '_blank');
+    navigate('/tickets');
   }
 
   const handleReportsClick = () => {
-    window.open('/reportes', '_blank');
+    navigate('/reportes');
   }
 
   return (
