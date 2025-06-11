@@ -12,8 +12,8 @@ const Ventas = () => {
     const [showSuccessModal, setShowSuccessModal] = useState(false);
     const [lastSaleDetails, setLastSaleDetails] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
-    const API_URL = 'https://backendpuntodeventa-1.onrender.com/api';
-    const BASE_URL = 'https://backendpuntodeventa-1.onrender.com';
+    const API_URL = 'https://backend-cisneros.onrender.com/api';
+    const BASE_URL = 'https://backend-cisneros.onrender.com';
 
     useEffect(() => {
         fetchProducts();

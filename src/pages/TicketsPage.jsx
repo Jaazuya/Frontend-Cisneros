@@ -7,7 +7,7 @@ function TicketsPage() {
     const [error, setError] = useState(null);
     const [totalRevenue, setTotalRevenue] = useState(0);
     const [totalItemsSold, setTotalItemsSold] = useState(0);
-    const API_URL = 'https://backendpuntodeventa-1.onrender.com/api';
+    const API_URL = 'https://backend-cisneros.onrender.com/api';
 
     useEffect(() => {
         const fetchSales = async () => {

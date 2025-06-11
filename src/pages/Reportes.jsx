@@ -11,7 +11,7 @@ function Reportes() {
         endDate: '',
         reportType: 'daily'
     });
-    const API_URL = 'https://backendpuntodeventa-1.onrender.com/api';
+    const API_URL = 'https://backend-cisneros.onrender.com/api';
 
     useEffect(() => {
         // Establecer fechas por defecto (último mes)
