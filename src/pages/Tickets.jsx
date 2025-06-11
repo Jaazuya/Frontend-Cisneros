@@ -45,7 +45,7 @@ function Tickets() {
 
   const handlePrintTicket = async (numeroTicket) => {
     try {
-      window.location.href = `${API_URL}/tickets/${numeroTicket}/pdf`;
+      window.open(`${API_URL}/tickets/${numeroTicket}/pdf`, '_blank');
     } catch (error) {
       setError(error.message)
     }

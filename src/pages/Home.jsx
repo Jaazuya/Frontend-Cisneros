@@ -14,15 +14,15 @@ function Home() {
   const { user } = useAuth()
 
   const handleSalesClick = () => {
-    window.location.href = '/ventas';
+    window.open('/ventas', '_blank');
   }
 
   const handleTicketsClick = () => {
-    window.location.href = '/tickets';
+    window.open('/tickets', '_blank');
   }
 
   const handleReportsClick = () => {
-    window.location.href = '/reportes';
+    window.open('/reportes', '_blank');
   }
 
   return (
