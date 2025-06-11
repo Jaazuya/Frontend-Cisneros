@@ -171,7 +171,7 @@ const Ventas = () => {
     const handlePrintTicket = (sale) => {
         const ticketUrl = sale.pdfUrl ? `${API_URL}${sale.pdfUrl}` : `${API_URL}/tickets/${sale._id}/pdf`;
         console.log('Intentando abrir URL del ticket:', ticketUrl);
-        window.open(ticketUrl, '_blank');
+        window.location.href = ticketUrl;
     };
 
     const closeSuccessModal = () => {

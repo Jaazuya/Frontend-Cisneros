@@ -14,7 +14,7 @@ function Home() {
   const { user } = useAuth()
 
   const handleSalesClick = () => {
-    window.open('/ventas', '_blank')
+    window.location.href = '/ventas';
   }
 
   const handleTicketsClick = () => {
