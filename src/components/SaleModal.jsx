@@ -7,7 +7,7 @@ function SaleModal({ onClose }) {
     const [sales, setSales] = useState([]);
     const [error, setError] = useState('');
     const [showNewSaleModal, setShowNewSaleModal] = useState(false);
-    const API_URL = 'https://backend-cisneros.onrender.com/api';
+    const API_URL = 'https://backend-cisneros.onrender.com';
 
     useEffect(() => {
         console.log('Iniciando SaleModal...');

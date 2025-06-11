@@ -15,7 +15,7 @@ function InventoryModal({ onClose }) {
         observaciones: ''
     });
     const [error, setError] = useState('');
-    const API_URL = 'https://backend-cisneros.onrender.com/api';
+    const API_URL = 'https://backend-cisneros.onrender.com';
 
     useEffect(() => {
         fetchInventory();
